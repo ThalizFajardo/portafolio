@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/*font-family: 'Inter',sans-serif;*/
+
+
+/*almacenando los colores a utilizar -->     */
+
+:root {
+    --principal-color: #286f6c;
+    --background-color: #fef2f2;
+    --enfacis-color: #f26440;
+    --friendly-gray: #adadad;
+    --pure-white: #ffffff;
+    --random-color: #f9f5f2;
+}
+
+
+/* Receteo de propiedades -->  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*estilado genral del proyecto*/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*estilos generales de la presentacion*/
+
+.header {
+    background-color: var(--background-color);
+    position: relative;
+}
+
+
+/*estilos de la navbar*/
+
+
+/*menu hamburgesa > barra de navegacion */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    height: 60px;
+}
+
+input#menu-hamburguesa {
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul {
+    background-color: var(--background-color);
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: calc( 100vh - 60px);
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    display: none;
+}
+
+input#menu-hamburguesa:checked~ul {
+    display: flex;
+}
+
+@media screen and ( min-width:600px) {
+    label {
+        display: none;
+    }
+    input#menu-hamburguesa~ul {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+}
+
+
+/*estilos de home */
+
+.home {
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 25% auto;
+}
+
+@media screen and ( min-width:600px) {
+    .home {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: ;
+    }
+}
+
+.home>h1 {
+    border: 1px solid black;
+    font-size: 50px;
+    margin: 1rem 5% 1rem 2%;
+    display: grid;
+    grid-column: 1 /3;
+}
+
+
+/*estilando los iconos de redes sociales*/
+
+.iconos {
+    border: 1px solid black;
+    display: grid;
+    margin-top: 0.5rem;
+    grid-template-columns: auto;
+    width: fit-content;
+    margin-left: 15%;
+    padding: 0 0 2rem 0;
+    gap: 2rem;
+}
+
+.icon-in,
+.icon-ins,
+.icon-twtr {
+    background-color: var(--enfacis-color);
+    border-radius: 50%;
+    display: grid;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-in>img,
+.icon-ins>img,
+.icon-twtr>img {
+    margin: auto;
+}
+
+
+/*estilando imagen*/
+
+.imagen>img {
+    border: 1px solid black;
+    width: fit-content;
+    height: 300px;
+}
+
+@media screen and ( min-width:600px) {
+    .iconos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        margin: 1rem 50% 1rem 6%;
+        gap: 5rem;
+    }
+    .home>h1 {
+        font-size: 80px;
+        margin: 2rem 60% 1rem 5%;
+    }
+    .imagen>img {}
+}
+
+
+/*
+.mosaico {
+    position: relative;
+    border: 1px solid black;
+    margin: 0 2rem 15% 2rem;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+*/
