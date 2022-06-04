@@ -5,7 +5,7 @@
 
 /*almacenando los colores a utilizar -->     */
 
-:root {
+ :root {
     --principal-color: #286f6c;
     --background-color: #fef2f2;
     --enfacis-color: #f26440;
@@ -50,6 +50,7 @@ nav {
     align-items: center;
     padding: 0.5rem 1.25rem;
     height: 60px;
+    color: var(--friendly-gray)
 }
 
 input#menu-hamburguesa {
@@ -97,22 +98,41 @@ input#menu-hamburguesa:checked~ul {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 25% auto;
+    grid-template-areas: "titulo" "iconos" "imagen";
+    gap: 10px;
+}
+
+.titulo {
+    grid-area: titulo;
+    grid-column: 1/3;
+    font-size: 40px;
+}
+
+.iconos {
+    grid-area: iconos;
+}
+
+.imagen {
+    grid-area: imagen;
+    width: fit-content;
+    height: fit-content;
+    grid-column-start: 2;
+    grid-row: 2;
 }
 
 @media screen and ( min-width:600px) {
     .home {
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-rows: ;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "titulo iconos" "imagen";
     }
-}
-
-.home>h1 {
-    border: 1px solid black;
-    font-size: 50px;
-    margin: 1rem 5% 1rem 2%;
-    display: grid;
-    grid-column: 1 /3;
+    .titulo {
+        grid-column: auto;
+    }
+    .imagen {
+        border: 1px solid black;
+        grid-row: 1/3;
+        grid-column: 2;
+    }
 }
 
 
@@ -154,21 +174,6 @@ input#menu-hamburguesa:checked~ul {
     height: 300px;
 }
 
-@media screen and ( min-width:600px) {
-    .iconos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        margin: 1rem 50% 1rem 6%;
-        gap: 5rem;
-    }
-    .home>h1 {
-        font-size: 80px;
-        margin: 2rem 60% 1rem 5%;
-    }
-    .imagen>img {}
-}
-
 
 /*
 .mosaico {
@@ -183,3 +188,72 @@ input#menu-hamburguesa:checked~ul {
     background: #5cb85c;
 }
 */
+
+
+/*seccion acerca-de-mi*/
+
+.acerca-de-mi {
+    display: inline-block;
+    margin: 3rem 5% 1rem 5%;
+}
+
+.acerca-de-mi>h2 {
+    color: var(--principal-color);
+    font: sans-serif bolder;
+    font-size: 20px;
+}
+
+.acerca-de-mi>p {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--friendly-gray);
+}
+
+@media and screen(min-width: 600px) {
+    .acerca-de-mi>h2 {
+        font-size: 24px;
+    }
+    .acerca-de-mi {
+        font-size: 14px;
+    }
+}
+
+
+/*empieza la seccion de habilidades*/
+
+.habilidades {
+    border: 2px solid black;
+    padding-top: 5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 1rem;
+}
+
+.habilidades>h2 {
+    color: var(--principal-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pizarra>ul {
+    border: 1ps solid black;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 25%;
+    gap: 1rem;
+    overflow: scroll;
+}
+
+.pizarra>ul>li {
+    border: 1px solid black;
+    background-color: var(--principal-color);
+    font-size: 14px;
+    width: 10rem;
+}
+
+.pizzarra>ul>li>p {
+    font-size: 10px;
+    padding: 2rem;
+}
