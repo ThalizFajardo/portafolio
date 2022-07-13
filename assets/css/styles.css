@@ -421,7 +421,7 @@ input#menu-hamburguesa:checked~ul {
 
 .portafolio>.contenedor-imagen1 {
     width: 28rem;
-    height: 20rem;
+    height: 27rem;
     background-color: var(--pure-white);
     border-radius: 5%;
     margin: -13% 2% 0% 3%;
