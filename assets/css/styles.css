@@ -5,7 +5,7 @@
 
 /*almacenando los colores a utilizar -->     */
 
- :root {
+:root {
     --principal-color: #286f6c;
     --background-color: #fef2f2;
     --enfacis-color: #f26440;
@@ -54,6 +54,15 @@ nav {
     color: var(--friendly-gray);
 }
 
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--friendly-gray);
+}
+
+nav>ul>li>a:hover {
+    color: #286f6c;
+}
+
 input#menu-hamburguesa {
     visibility: hidden;
 }
@@ -64,7 +73,7 @@ input#menu-hamburguesa~ul {
     position: absolute;
     width: 100%;
     left: 0;
-    height: calc( 100vh - 60px);
+    height: calc(100vh - 60px);
     top: 60px;
     flex-direction: column;
     align-items: center;
@@ -72,16 +81,26 @@ input#menu-hamburguesa~ul {
     padding: 2rem 1rem;
     display: none;
     z-index: 1;
+
 }
+
+.nav-list>li>a:hover {
+    color: #286f6c;
+}
+
+
 
 input#menu-hamburguesa:checked~ul {
     display: flex;
 }
 
-@media screen and ( min-width:600px) {
+
+
+@media screen and (min-width:600px) {
     label {
         display: none;
     }
+
     input#menu-hamburguesa~ul {
         position: static;
         background-color: transparent;
@@ -89,6 +108,7 @@ input#menu-hamburguesa:checked~ul {
         flex-direction: row;
         height: auto;
     }
+
 }
 
 
@@ -98,7 +118,7 @@ input#menu-hamburguesa:checked~ul {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 25% auto;
-    grid-template-areas: "titulo" "iconos" "imagen";
+    grid-template-areas: "titulo""iconos""imagen";
     gap: 10px;
 }
 
@@ -176,26 +196,30 @@ input#menu-hamburguesa:checked~ul {
     position: inherit;
 }
 
-@media screen and ( min-width:600px) {
+@media screen and (min-width:600px) {
     .home {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
     }
+
     .titulo {
         grid-column: auto;
         margin: 10%;
         align-items: baseline;
         width: min-content;
     }
+
     .iconos {
         grid-template-columns: auto auto auto;
         column-gap: 25%;
         margin: -17% 8%;
     }
+
     .circulo-verde {
         width: auto;
         height: auto;
     }
+
     .imagen {
         grid-row: 1/3;
         grid-column: 2;
@@ -231,9 +255,11 @@ input#menu-hamburguesa:checked~ul {
     .acerca-de-mi {
         margin: 1% 10%;
     }
+
     .acerca-de-mi>h2 {
         font-size: 40px;
     }
+
     .acerca-de-mi {
         font-size: 14px;
     }
@@ -281,6 +307,7 @@ input#menu-hamburguesa:checked~ul {
 }
 
 .pizarra>ul {
+    scrollbar-width: none;
     list-style: none;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -322,15 +349,26 @@ input#menu-hamburguesa:checked~ul {
 
 @media screen and (min-width: 600px) {
     .habilidades>.circulote {
-        height: 87%;
-        width: 46%;
-        margin: auto auto auto -33%;
+        height: 84%;
+        width: 55%;
+        margin: auto auto auto -39%;
+
     }
+
     .circulote>.circulote-hijo {
         margin: 46% auto auto 56%;
         width: 49%;
         height: 53%;
     }
+}
+
+@media screen and (min-width: 850px) {
+    .habilidades>.circulote {
+        height: 100%;
+        width: 54%;
+        margin: auto auto auto -41%;
+    }
+
 }
 
 .habilidades {
@@ -402,6 +440,7 @@ input#menu-hamburguesa:checked~ul {
         gap: 5%;
         margin: auto 10%;
     }
+
     .experiencia>h2 {
         margin-left: 10%;
         font-size: 40px;
@@ -474,8 +513,8 @@ input#menu-hamburguesa:checked~ul {
 .circulo-decor {
     position: absolute;
     margin: 10% auto 5% -13%;
-    width: 50%;
-    height: 41%;
+    width: 57%;
+    height: 53%;
     border-radius: 50%;
     opacity: 50%;
     background: var(--principal-color);
@@ -505,6 +544,11 @@ input#menu-hamburguesa:checked~ul {
 
 .email {
     margin-left: 30%;
+}
+
+.email>a {
+    text-decoration: none;
+    color: var(--principal-color);
 }
 
 .icon-contacto {
@@ -545,29 +589,35 @@ input#menu-hamburguesa:checked~ul {
     font-size: small;
 }
 
-@media screen and ( min-width:600px) {
+@media screen and (min-width:600px) {
     .circulo-decor {
         width: 45%;
         height: 56%;
         margin: 6% auto auto -16%;
     }
+
     .telefono {
         margin-left: 61%;
     }
+
     .email {
         margin-left: 25%;
     }
+
     .email>h5 {
         margin: 5% auto auto 8%;
     }
+
     .telefono>h5 {
         color: var(--principal-color);
         margin: 12% auto auto -14%;
         font-size: inherit;
     }
+
     .telefono>p {
         margin: 2% 1% 1% 5%;
     }
+
     .email>p {
         margin: 6px 0 0 -15px;
     }
@@ -578,24 +628,29 @@ input#menu-hamburguesa:checked~ul {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
     }
+
     .portafolio>.contenedor-imagen {
         grid-column-start: 2;
         width: 18rem;
         height: 14rem;
         margin: -60px 0 -44px 29%;
     }
+
     .portafolio>.contenedor-imagen>img,
     .portafolio>.contenedor-imagen>img {
         margin: 10px 0 0 23px;
     }
+
     .portafolio>.contenedor-imagen>h3,
     .portafolio>.contenedor-imagen1>h3 {
         margin: 0px 0px -6px 22px;
         font-size: 10px;
     }
+
     .portafolio>.informacion {
         margin: 11% 14% 18% 15%;
     }
+
     .portafolio>.contenedor-imagen1 {
         width: 19rem;
         height: 14rem;
@@ -611,7 +666,7 @@ footer>p {
     margin: 11% 32%;
 }
 
-@media screen and ( min-width:600px) {
+@media screen and (min-width:600px) {
     footer>p {
         margin: 8% 39%;
     }
