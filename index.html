@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <script src="https://kit.fontawesome.com/934f768768.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -16,6 +17,7 @@
             <label for="menu-hamburguesa">
                 <img src="./assets/images/menu 1.svg" alt="">
             </label>
+
             <ul class="nav-list">
                 <li><a href="#casa-section">Home</a></li>
                 <li><a href="#acerca-section">Acerca de mi</a></li>
@@ -25,21 +27,30 @@
                 <li><a href="#contacto-section">Contacto</a></li>
             </ul>
         </nav>
+
+        <!-- HOME SECTION -->
         <div class="home">
             <div class="titulo">
-                <h1>Web Developer </h1>
+                <h2>Thaliz <span>Fajardo</span></h2>
+                <p>I'm a Web Developer</p>
             </div>
             <div class="iconos">
                 <div class="icon-in">
-                    <a href="https://www.linkedin.com/in/thaliz-fajardo-00026a244/"></a>
-                    <img src="./assets/images/cib_linkedin-in.svg">
+                    <a href="https://www.linkedin.com/in/thaliz-fajardo-00026a244/">
+                        <img src="./assets/images/cib_linkedin-in.svg" alt="">
+                    </a>
                 </div>
-                <div class="icon-ins">
-                    <img src="./assets/images/ant-design_instagram-filled.svg">
-                </div>
+
                 <div class="icon-twtr">
-                    <img src="./assets/images/bxl-github.png">
-                    <a href="https://github.com/ThalizFajardo"></a>
+                    <a href="https://github.com/ThalizFajardo">
+                        <img src="./assets/images/bxl-github.png" alt="">
+                    </a>
+                </div>
+                <div class="icon-dwCV">
+                    <a href="./assets/pages/Formato CV Thaliz Fajardo.docx" download="ThaizF-CV">
+                        <img alt=""
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOlJREFUSEvtlMuRwjAQRF9nsEQCIUBEhABkQEZsCBAJZDDUuCRKdknW+ODaAzsnuyT3m097xMqhlfX5MoCZmbdUUrjy8EUX/geMHGtmZ+Aq6ZUPai0ysx/gKOlSs3x1Bkn8BNyBQ4ZMAUn8BuyAiyRPahQtgGf1C2xLSAmYiD+AfVltpjRdlARGEOCZPtwAOfOm+GDpuVVRgXgrPLx1/jwr3gUk75ftKvPpiocADUhIPAyYQPy1OtCwTVtzSTPxXfT5N3rrftEu6oktqiB7Pira2rBz/8GwmqOxGBAV7t37uxn0Mouer17BG3TDahlrKW7LAAAAAElFTkSuQmCC" />
+                    </a>
                 </div>
             </div>
             <div class="imagen">
@@ -52,120 +63,180 @@
         </div>
     </header>
 
-    <section class="acerca-de-mi" id="acerca-section">
+    <main>
+        <!-- ACERCA DE MI -->
+        <section class="acerca-de-mi" id="acerca-section">
 
-        <h2>Acerca de mí</h2>
-        <p>Me llamo Thaliz Fajardo,me presento a mi misma como una persona perfeccionista al detalle,siempre dispuesta a
-            trabajar en
-            colaboracion con mis compañeros y con muy buena actitud hacia mi trabajo.Mi objetivo mas cercano a nivel
-            profesional es pasar de junior a senior en el menor tiempo posible.Me encanta el desarrollo web y
-            siempre estoy en constante aprendizaje para optimizar mi codigo.</p>
-    </section>
+            <h2>Acerca de mí</h2>
+            <p>Me llamo <span> Thaliz Fajardo </span> y soy web developer front-end. Estoy muy apasionada y motivada por
+                mi trabajo,
+                todos los dias me tengo la mision de mejorar mis conocimientos a diario. Por el momento estoy buscando
+                mejorar mis habilidades a traves de los projetos que construyo </p>
 
-    <section class="habilidades" id="habilidades-section">
-        <div class="circulote">
-            <div class="circulote-hijo"></div>
-        </div>
-        <h2><span>Mis</span> habilidades</h2>
-        <div class="pizarra">
-            <ul>
-                <li class="cards">
-                    <div class="encabezado">
-                        <img src="./assets/images/bombilla-de-idea.png">
-                        <h4>UX/UI Desing</h4>
-                    </div>
-                    <p> Hacemos que su pagina muestre los mejores diseños optimizados al detalle para que no haya ningun
-                        tipo de errores y ofrezer la mejor experiencia al usuario</p>
+
+            <div class="about-info-list">
+                <ul>
+                    <!-- birthday -->
+                    <li>
+                        <span class="about-info-logo">
+                            <i class="fas fa-gift"></i>
+                        </span>
+                        <span><label>Birthday:</label>11.07.1998</span>
+                    </li>
+                    <!-- Age -->
+                    <li>
+                        <span class="about-info-logo"><i class="far fa-calendar-alt"></i></span>
+                        <span><label>Age:</label>24</span>
+                    </li>
+                    <!-- location -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-map-marker-alt"></i></span>
+                        <span><label>Location:</label>Ciudad de Mexico</span>
+                    </li>
+                    <!-- interests -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-gamepad"></i></span>
+                        <span><label>Interests:</label>Videogames, Music, Nature</span>
+                    </li>
+                    <!-- study -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-school"></i></span>
+                        <span><label>Study:</label>Academlo</span>
+                    </li>
+                    <!-- degree -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-graduation-cap"></i></span>
+                        <span><label>Degree:</label>Bachelor</span>
+                    </li>
+                    <!-- mail -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-envelope"></i></span>
+                        <span><label>Mail:</label>
+                            <a href="mailto:fajardoThaliz@gmail.com">My mail</a>
+                        </span>
+                    </li>
+                    <!-- phone -->
+                    <li>
+                        <span class="about-info-logo"><i class="fas fa-phone-alt"></i></span>
+                        <span><label>Phone:</label>
+                            <a href="tel:+525529039985">+525529039985</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="habilidades" id="habilidades-section">
+            <div class="circulote">
+                <div class="circulote-hijo"></div>
+            </div>
+            <h2><span>Mis</span> habilidades</h2>
+            <div class="pizarra">
+                <ul>
+                    <li class="cards">
+                        <div class="encabezado">
+                            <img src="./assets/images/bombilla-de-idea.png">
+                            <h4>Creatividad</h4>
+                        </div>
+                        <p>Con experiencia puedes resolver un problema,pero con creatividad puedes resolver muchos de
+                            ellos</p>
+                    </li>
+                    <li class="cards">
+                        <div class="encabezado">
+                            <img src="./assets/images/gobernante.png">
+                            <h4>Responsividad</h4>
+                        </div>
+                        <p>las paginas web en la actualidad deben de tener un diseño responsivo, detras de ello debe de
+                            haber un desarrollador responsable</p>
+                    </li>
+                    <li class="cards">
+                        <div class="encabezado">
+                            <img src="./assets/images/iphone.png">
+                            <h4>Diseño interactivo</h4>
+                        </div>
+                        <p>Diseños atractivos e interactivos para hacer la experiencia lo mas
+                            inmersiva y personalizada posible</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="experiencia" id="experiencia-section">
+            <h2>Experiencia</h2>
+            <ul class="experiencias3">
+                <li>
+                    <a href="https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/">
+                        <img src="./assets/images/quotesAppImg.jpeg" style="height:5rem ;">
+                        <span>Quotes App</span>
+                    </a>
+
                 </li>
-                <li class="cards">
-                    <div class="encabezado">
-                        <img src="./assets/images/gobernante.png">
-                        <h4>Product Designer</h4>
-                    </div>
-                    <p>Analizamos los problemas o necesidades que pueda tener tu producto, para mejorar estrategias de
-                        marketin en ventas.</p>
+                <li>
+                    <a href="https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/">
+                        <img src="./assets/images/ewaterAppImg.jpeg" style="height:5rem;">
+                        <span>Weater App</span>
+                    </a>
+
                 </li>
-                <li class="cards">
-                    <div class="encabezado">
-                        <img src="./assets/images/iphone.png">
-                        <h4>Interactive Desing</h4>
-                    </div>
-                    <p>Diseños atractivos y amigables a la vista e interactivos para hacer la experiencia lo mas
-                        inmersiva y personalizada posible</p>
+                <li>
+                    <a href="https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/">
+                        <img src="./assets/images/rymfoto.jpeg" style="height:5rem;">
+                        <span>Rick & Mory Wiki</span>
+                    </a>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section class="experiencia" id="experiencia-section">
-        <h2>Experiencia</h2>
-        <ul class="experiencias3">
-            <li>
-                <a href="https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/">
-                    <img src="./assets/images/quotesAppImg.jpeg" style="height:5rem ;">
-                    <span>Quotes App</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/">
-                    <img src="./assets/images/ewaterAppImg.jpeg" style="height:5rem;">
-                    <span>Weater App</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/">
-                    <img src="./assets/images/rymfoto.jpeg" style="height:5rem;">
-                    <span>Rick & Mory Wiki</span>
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="portafolio" id="portafolio">
-        <div>
-            <a href="https://6343b3c143c38a3648073a1b--serene-llama-fdc802.netlify.app/">
-                <img src="./assets/images/e-comercefoto.jpeg" class="contenedor-imagen1">
-                <h3>e-commerce(tech)</h3>
-            </a>
-        </div>
-        <div class="informacion">
-            <h3>Portafolio</h3>
-            <p>Esta seleccion son algunos de los proyectos en los que he trabajado</p>
-        </div>
-        <div class="contenedor-imagen">
-            <a href="https://63445d92e8139737d3edd518--eclectic-jelly-0adca9.netlify.app/">
-                <img src="./assets/images/Captura web_13-7-2022_12209_127.0.0.1.jpeg">
-                <h3>e-commerce(clothes)</h3>
-            </a>
-        </div>
-    </section>
-
-    <section class="contacto" id="contacto-section">
-        <div class="circulo-decor"></div>
-        <h2>Contacto</h2>
-        <div class="contacto_info">
-            <div class="telefono">
-                <div class="icon-contacto">
-                    <img src="./assets/images/phone 3.svg">
-                </div>
-                <h5>Número celular</h5>
-                <p>+52 55 2903 9985</p>
-            </div>
-            <div class="email">
-                <div class="icon-contacto">
-                    <img src="./assets/images/mail 3.svg">
-                </div>
-
-                <h5>Email</h5>
-                <a href="mailto:fajardothaliz@gmail.com">
-                    <p>fajardothaliz@gmail.com</p>
+        <!-- PORTAFOLIO -->
+        <section class="portafolio" id="portafolio">
+            <div class="contenedor-imagen1">
+                <a href="https://6343b3c143c38a3648073a1b--serene-llama-fdc802.netlify.app/">
+                    <img src="./assets/images/e-comercefoto.jpeg" class="contenedor-imagen1">
+                    <h3>e-commerce(tech)</h3>
                 </a>
             </div>
-        </div>
-    </section>
+            <div class="informacion">
+                <h3>Portafolio</h3>
+                <p>Esta seleccion son algunos de los proyectos en los que he trabajado</p>
+            </div>
+            <div class="contenedor-imagen">
+                <a href="https://63445d92e8139737d3edd518--eclectic-jelly-0adca9.netlify.app/">
+                    <img src="./assets/images/Captura web_13-7-2022_12209_127.0.0.1.jpeg">
+                    <h3>e-commerce(clothes)</h3>
+                </a>
+            </div>
+        </section>
 
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto-section">
+            <div class="circulo-decor"></div>
+            <h2>Contacto</h2>
+            <div class="contacto_info">
+                <div class="telefono">
+                    <div class="icon-contacto">
+                        <img src="./assets/images/phone 3.svg">
+                    </div>
+                    <h5>Número celular</h5>
+                    <p>+52 55 2903 9985</p>
+                </div>
+                <div class="email">
+                    <div class="icon-contacto">
+                        <img src="./assets/images/mail 3.svg">
+                    </div>
+
+                    <h5>Email</h5>
+                    <a href="mailto:fajardothaliz@gmail.com">
+                        <p>fajardothaliz@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
         <p>Hecho ❤ con Academlo</p>
     </footer>
